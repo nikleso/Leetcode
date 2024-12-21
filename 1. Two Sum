@@ -1,0 +1,13 @@
+public class Solution {
+    public int[] TwoSum(int[] nums, int target) {
+        for(var a = 0; a < nums.Length; a++)
+        {
+            for(var b = a + 1; b < nums.Length; b++)
+            {
+                if(nums[a] + nums[b] == target)
+                    return new int[] {a, b};
+            }
+        }
+    return null;
+    }
+}
